@@ -327,8 +327,8 @@ export default class Carousel extends Component {
     }
 
     _needsRTLAdaptations () {
-        const { vertical } = this.props;
-        return IS_RTL && !IS_IOS && !vertical;
+        const { vertical,isRTL } = this.props;
+        return isRTL && !IS_IOS && !vertical;
     }
 
     _canLockScroll () {
